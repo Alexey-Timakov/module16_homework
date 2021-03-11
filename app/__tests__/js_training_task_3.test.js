@@ -9,16 +9,16 @@ describe("Checking how does Calculate Function behave", () =>{
     it("Check for string value", () => {
         const strVal = "any string";
         const result = calculateY(strVal);
-        expect(result).toBeNaN();
+        expect(result).toBe("Введено некорректное значение!");
     }),
     it("Check for null value", () => {
         const strNull = null;
         const result = calculateY(strNull);
-        expect(result).toBe(Infinity);
+        expect(result).toBe("Введено некорректное значение!");
     }),
     it("Check for empty string value", () => {
         const emptyStr = "";
         const result = calculateY(emptyStr);
-        expect(result).toBe(Infinity);
+        expect(result).toBe("Введено некорректное значение!");
     })
 });
